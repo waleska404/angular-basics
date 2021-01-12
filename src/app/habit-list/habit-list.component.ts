@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Observable } from 'rxjs';
+import { Habit } from '../habit';
 import { HabitService } from '../habit.service';
 
 @Component({
@@ -20,7 +21,7 @@ import { HabitService } from '../habit.service';
 })
 export class HabitListComponent implements OnInit {
 
-  habits: Observable<any>;
+  habits: Observable<Habit[]>;
 
   constructor(private habitService: HabitService) {}
   
