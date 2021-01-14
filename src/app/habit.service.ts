@@ -1,12 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { of, Observable } from 'rxjs';
+import { Subject, BehaviorSubject, of, Observable } from 'rxjs';
 import { Habit } from './habit';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HabitService {
+  private
+
   habits: Habit[] = [
     {
       id: 1,
@@ -30,9 +32,10 @@ export class HabitService {
     }
   ];
 
+  constructor(private http: HttpClient) {}
+
   getHabits(): Observable<Habit[]> {
-    //return of(this.habits);
-    return this.http.get<Habit[]>('/api/habits')
+    return this.http.get<Habit[]>('/habits')
   }
 
   addHabit(newHabit) {
@@ -41,5 +44,5 @@ export class HabitService {
     this.habits.push(newHabit);
   }
 
-  constructor(private http: HttpClient) {}
+  
 }

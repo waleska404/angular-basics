@@ -7,7 +7,6 @@ import { HabitService } from '../habit.service';
 @Component({
   selector: 'app-habit-list',
   template: `
-    <h2>Habits</h2>
     <app-habit-form (addHabit)="onAddHabit($event)"></app-habit-form>
     <ul>
       <app-habit-item 
