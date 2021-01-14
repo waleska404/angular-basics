@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-habit-detail',
+  selector: 'app-account',
   template: `
     <p>
-      habit-detail works!
+      account works!
     </p>
   `,
   styles: [
   ]
 })
-export class HabitDetailComponent implements OnInit {
+export class AccountComponent implements OnInit {
 
   constructor() { }
 

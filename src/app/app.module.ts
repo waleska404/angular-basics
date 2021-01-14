@@ -5,26 +5,27 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HabitListComponent } from './habit-list/habit-list.component';
-import { HabitDetailComponent } from './habit-detail/habit-detail.component';
 import { HabitItemComponent } from './habit-item/habit-item.component';
 import { HabitFormComponent } from './habit-form/habit-form.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule, Routes } from '@angular/router';
+import { AccountComponent } from './account/account.component';
 
 const routes: Routes = [
-  {path: 'habits', component: AppComponent},
-  {path: '', redirectTo: '/habits', pathMatch: 'full'}
+  {path: 'habitlist', component: HabitListComponent},
+  {path: 'account', component: AccountComponent},
+  {path: '', redirectTo: '/habitlist', pathMatch: 'full'}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HabitListComponent,
-    HabitDetailComponent,
     HabitItemComponent,
-    HabitFormComponent
+    HabitFormComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

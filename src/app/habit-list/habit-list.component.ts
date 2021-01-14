@@ -7,6 +7,7 @@ import { HabitService } from '../habit.service';
 @Component({
   selector: 'app-habit-list',
   template: `
+    <h1>Habits</h1>
     <app-habit-form (addHabit)="onAddHabit($event)"></app-habit-form>
     <ul>
       <app-habit-item 
@@ -15,8 +16,7 @@ import { HabitService } from '../habit.service';
       </app-habit-item>
     </ul>
   `,
-  styles: [
-  ]
+  styles: ['h1 { color: blue; }']
 })
 export class HabitListComponent implements OnInit {
 
