@@ -11,6 +11,13 @@ import { HabitFormComponent } from './habit-form/habit-form.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {path: 'habits', component: AppComponent},
+  {path: '', redirectTo: '/habits', pathMatch: 'full'}
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
