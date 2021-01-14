@@ -12,10 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account/account.component';
+import { AccountDetailComponent } from './account-detail/account-detail.component';
 
 const routes: Routes = [
   {path: 'habitlist', component: HabitListComponent},
   {path: 'account', component: AccountComponent},
+  {path: 'account/:id', component: AccountDetailComponent},
   {path: '', redirectTo: '/habitlist', pathMatch: 'full'}
 ];
 
@@ -25,7 +27,8 @@ const routes: Routes = [
     HabitListComponent,
     HabitItemComponent,
     HabitFormComponent,
-    AccountComponent
+    AccountComponent,
+    AccountDetailComponent
   ],
   imports: [
     BrowserModule,
