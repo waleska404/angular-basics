@@ -9,6 +9,8 @@ import { HabitDetailComponent } from './habit-detail/habit-detail.component';
 import { HabitItemComponent } from './habit-item/habit-item.component';
 import { HabitFormComponent } from './habit-form/habit-form.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { HabitFormComponent } from './habit-form/habit-form.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
 import { Habit } from './habit';
@@ -30,7 +31,8 @@ export class HabitService {
   ];
 
   getHabits(): Observable<Habit[]> {
-    return of(this.habits);
+    //return of(this.habits);
+    return this.http.get<Habit[]>('/api/habits')
   }
 
   addHabit(newHabit) {
@@ -39,5 +41,5 @@ export class HabitService {
     this.habits.push(newHabit);
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) {}
 }
