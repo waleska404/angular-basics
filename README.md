@@ -1,6 +1,7 @@
-# AngularBasics
 
-Little exercise to learn the basics of angular.
+# AngularBasics <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="angular-logo" width="70px" height="70px"/>
+
+Little exercise about a Habit List to learn the basics of angular.
 
 ## Development server
 
@@ -10,17 +11,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Setting up the API server
 
+Run `npm install -g json-server` to install json-server.
 
-## Further help
+Then create a file for example: `habits.jason` with the json data you want to serve.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `json-server --watch habits.json --port 3001` to start the server.
+
