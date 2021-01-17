@@ -15,6 +15,8 @@ import { HabitService } from '../habit.service';
         [habit]="habit">
       </app-habit-item>
     </ul>
+    <a routerLinkActive="Active" routerLink="info">INFO</a>
+    <router-outlet></router-outlet>
   `,
   styles: ['h1 { color: blue; }']
 })
