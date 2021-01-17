@@ -1,21 +1,21 @@
 
 # AngularBasics <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="angular-logo" width="70px" height="70px"/>
 
-Little exercise about a Habit List to learn the basics of angular.
+Little exercise about a Habit List to learn the basics of angular. :checkered_flag:
 
-## Development server
+## Development server :rocket:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
-## Code scaffolding
+## Code scaffolding :hammer:
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running unit tests
+## Running unit tests :bomb:
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Setting up the API server
+## Setting up the API server :outbox_tray:
 
 Run `npm install -g json-server` to install json-server.
 
